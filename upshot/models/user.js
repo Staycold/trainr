@@ -12,9 +12,9 @@ const UserSchema = new mongoose.Schema(
             type: String,
             required: true,
             unique: true,
-            match: [/.+@.+\..+/, 'Must use a valid email address'],
-          },
-          password: {
+            match: [/.+@.+..+/, 'Must use a valid email address'],
+        },
+            password: {
             type: String,
             required: true,
           },
@@ -24,8 +24,3 @@ const UserSchema = new mongoose.Schema(
           }
     }
 );
-
-
-
-module.exports = mongoose.models.User || mongoose.model('User' ,
-UserSchema);
