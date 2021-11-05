@@ -17,10 +17,10 @@ const UserSchema = new mongoose.Schema(
             password: {
             type: String,
             required: true,
-        },
-            isTrainer: {
+          },
+          isTrainer: {
             type: Boolean,
             default: false,
-        }
+          }
     }
 );
